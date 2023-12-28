@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Fault Algorithms</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Page Fault Algorithm</h1>
+    
+    <label for="pra">Select Algorithm:</label>
+    <select id="pra">
+        <option value="FIFO">FIFO</option>
+        <option value="LRU">LRU</option>
+        <option value="Optimal">Optimal</option>
+    </select>
+    
+    <label for="Summary">Show Summary:</label>
+    <input type="checkbox" id="Summary">
+    
+    <br>
+    
+    <label for="noofframes">Number of Frames:</label>
+    <input type="number" class="noofframes" value="3">
+    
+    <br>
+    
+    <label for="references">Reference String (space-separated):</label>
+    <input type="text" id="references" value="" placeholder="Enter Reference String(space-separated)">
+
+    
+    <button onclick="pushData()">Run</button>
+    
+    
+    <div class="part1">
+        <!-- Summary will be displayed here if enabled -->
+    </div>
+    
+    <div class="part2">
+        <!-- Table of page fault simulation results will be displayed here -->
+    </div>
+    
+    <div class="part3">
+        <!-- Calculation results will be displayed here -->
+    </div>
+    
+    <!-- Include your external JavaScript file here -->
+    <script src="script.js"></script>
+</body>
+</html>
